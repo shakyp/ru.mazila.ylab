@@ -19,37 +19,21 @@ public class Complex {
         this.imaginaryPart = imaginaryPart;
     }
 
-    public double getRealPart() {
-        return realPart;
-    }
-
-    public void setRealPart(double realPart) {
-        this.realPart = realPart;
-    }
-
-    public double getImaginaryPart() {
-        return imaginaryPart;
-    }
-
-    public void setImaginaryPart(double imaginaryPart) {
-        this.imaginaryPart = imaginaryPart;
-    }
-
     public static Complex addition(Complex a, Complex b) {
-        return new Complex(a.getRealPart() + b.getRealPart(),
-                a.getImaginaryPart() + b.getImaginaryPart());
+        return new Complex(a.realPart + b.realPart,
+                a.imaginaryPart + b.imaginaryPart);
     }
 
     public static Complex subtraction(Complex a, Complex b) {
-        return new Complex(a.getRealPart() - b.getRealPart(),
-                a.getImaginaryPart() - b.getImaginaryPart());
+        return new Complex(a.realPart - b.realPart,
+                a.imaginaryPart - b.imaginaryPart);
     }
 
     public static Complex multiplication(Complex a, Complex b) {
-        return new Complex(a.getRealPart() * b.getRealPart() -
-                a.imaginaryPart * b.getImaginaryPart(),
-                a.getRealPart() * b.getImaginaryPart() +
-                        a.getImaginaryPart() * b.getRealPart());
+        return new Complex(a.realPart * b.realPart -
+                a.imaginaryPart * b.imaginaryPart,
+                a.realPart * b.imaginaryPart +
+                        a.imaginaryPart * b.realPart);
     }
 
     public double module() {

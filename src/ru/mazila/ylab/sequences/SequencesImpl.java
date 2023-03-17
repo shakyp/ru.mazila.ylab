@@ -6,14 +6,6 @@ public class SequencesImpl implements ISequencesGenerator {
 
     private int num;
 
-    public int getNum() {
-        return num;
-    }
-
-    public void setNum(int num) {
-        this.num = num;
-    }
-
     public SequencesImpl() {
     }
 
@@ -22,7 +14,7 @@ public class SequencesImpl implements ISequencesGenerator {
 
         System.out.print("Последовательность A длиной " + n + ": ");
 
-        setNum(0);
+        this.num = 0;
 
         for (int i = 1; i <= n; i++) {
             num += 2;
@@ -36,7 +28,7 @@ public class SequencesImpl implements ISequencesGenerator {
 
         System.out.print("Последовательность B длиной " + n + ": ");
 
-        setNum(1);
+       this.num = 1;
 
         for (int i = 1; i <= n; i++) {
             System.out.print(num + " ");
@@ -61,7 +53,7 @@ public class SequencesImpl implements ISequencesGenerator {
 
         System.out.print("Последовательность D длиной " + n + ": ");
 
-        setNum(1);
+        this.num = 1;
 
         for (int i = 1; i <= n; i++) {
             System.out.print((int) Math.pow(num++, 3) + " ");
@@ -74,7 +66,7 @@ public class SequencesImpl implements ISequencesGenerator {
 
         System.out.print("Последовательность E длиной " + n + ": ");
 
-        setNum(1);
+        this.num = 1;
 
         for (int i = 1; i <= n; i++) {
             System.out.print(num + " ");
@@ -88,7 +80,7 @@ public class SequencesImpl implements ISequencesGenerator {
 
         System.out.print("Последовательность F длиной " + n + ": ");
 
-        setNum(1);
+        this.num = 1;
 
         for (int i = 1; i <= n; i++) {
             System.out.print(i * num + " ");
@@ -102,7 +94,7 @@ public class SequencesImpl implements ISequencesGenerator {
 
         System.out.print("Последовательность G длиной " + n + ": ");
 
-        setNum(1);
+        this.num = 1;
 
         for (int i = 1; i <= n; i++) {
             System.out.print(i * i * num + " ");
@@ -116,7 +108,7 @@ public class SequencesImpl implements ISequencesGenerator {
 
         System.out.print("Последовательность H длиной " + n + ": ");
 
-        setNum(0);
+        this.num = 0;
 
         int count = 0;
 
@@ -138,7 +130,7 @@ public class SequencesImpl implements ISequencesGenerator {
 
         System.out.print("Последовательность I длиной " + n + ": ");
 
-        setNum(1);
+        this.num = 1;
 
         for (int i = 1; i <= n; i++) {
             num *= i;
@@ -152,7 +144,7 @@ public class SequencesImpl implements ISequencesGenerator {
 
         System.out.print("Последовательность J длиной " + n + ": ");
 
-        setNum(0);
+        this.num = 0;
 
         int num0 = 1;
         int num1 = 1;
